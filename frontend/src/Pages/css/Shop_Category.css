@@ -1,0 +1,12 @@
+.shopcategory_products{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap:wrap ;
+}
+
+.shopcategory-indexSort{
+    padding: 20px;
+}

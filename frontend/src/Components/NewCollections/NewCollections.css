@@ -3,7 +3,9 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
+    flex-wrap: wrap;
+    cursor: pointer;
+
 
 }
 
@@ -23,8 +25,19 @@
 }
 
 .collections{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 50px;
     gap: 30px;
 }
+
+.item{
+    background-color: rgba(227, 189, 255, 0.336);
+    padding: 5px ;
+    font-weight: 900;
+    
+}
+

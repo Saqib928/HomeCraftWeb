@@ -9,13 +9,14 @@ import Item from "../Components/Items/Item"
 
 const ShopCategory = (props) => {
   const {all_product}=useContext(ShopContext);
+  console.log(props)
 
   return (
     <div className='shop_category'>
       <img src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
         <p>
-          <span>Showing 1-12</span> out  of 36 products
+          <span>Showing 1-12</span> of {props.category} products
         </p>
         <div className="shopcategory-sort">
           Sort by <img src={dropdown_icon} alt="" />

@@ -1,9 +1,12 @@
 .popular{
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
+    cursor: pointer;
+    padding: 50px;
+  
 
 }
 
@@ -25,6 +28,9 @@
 .popular_item{
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 
 }

@@ -10,8 +10,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav_logo">
         <img src={logo} alt="logo" />
-        <p>SHOPMERCE</p>
+       <a style={{textDecoration:"none"}} href="/"> <p>SHOPMERCE</p></a>
       </div>
+     
       <ul className="nav_menu">
         <li
           onClick={() => {
@@ -22,7 +23,7 @@ const Navbar = () => {
         </li>
         <li
           onClick={() => {
-            setMenu("mens");
+            setMenu ("mens");
           }}
         >
           <Link style={{textDecoration:'none'}} to="/mens">Men{menu == "mens" ? <hr /> : <></>}</Link>
