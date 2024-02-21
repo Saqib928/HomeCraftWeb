@@ -5,66 +5,70 @@ import cart_icon from "../Assets/cart_icon.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("shop");
+  const [menu, setMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
-    <div className="navbarshop">
+    <div className={`navbarshop ${menu ? "menu-open" : ""}`}>
       <div className="nav_logo">
-        <img height={90} src={logo} alt="logo" />
-        <a style={{ textDecoration: "none" }} href="/"></a>
+        <a href="/">
+        <img height={110} src={logo} alt="logo" /></a>
       </div>
 
-      <ul className="nav_menu">
+      <ul className={`nav_menu ${menu ? "active" : ""}`}>
         <li
           onClick={() => {
-            setMenu("shop");
+            setMenu(false);
           }}
         >
           <Link style={{ textDecoration: "none" }} to="/">
             {" "}
-            Shop{menu === "shop" ? <hr /> : <></>}
+            Latest
           </Link>
         </li>
         <li
           onClick={() => {
-            setMenu("mens");
+            setMenu(false);
           }}
         >
           <Link style={{ textDecoration: "none" }} to="/mens">
-            Home Decoration{menu === "mens" ? <hr /> : <></>}
+            All Products
           </Link>
         </li>
         <li
           onClick={() => {
-            setMenu("women");
+            setMenu(false);
           }}
         >
           <Link style={{ textDecoration: "none" }} to="/about">
             {" "}
-            About Us{menu === "women" ? <hr /> : <></>}
+            About Us
           </Link>
         </li>
         <li
           onClick={() => {
-            setMenu("kids");
+            setMenu(false);
           }}
         >
           <Link style={{ textDecoration: "none" }} to="/contactus">
             {" "}
-            Contact Us{menu == "kids" ? <hr /> : <></>}
+            Contact Us
           </Link>
         </li>
       </ul>
 
       <div className="nav_login_cart">
-        {/* <Link style={{ textDecoration: "none" }} to="/login">
-          {" "}
-          <button>Login</button>
-        </Link> */}
-        <Link style={{ textDecoration: "none" }} to="/cart">
-          {" "}
-          <img src={cart_icon} alt="carticon" />
-        </Link>
+        <img src={cart_icon} alt="carticon" />
         <div className="nav_cart_count">0</div>
+      </div>
+
+      <div className={`hamburger ${menu ? "active" : ""}`} onClick={toggleMenu}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
     </div>
   );

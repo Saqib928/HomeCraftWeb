@@ -8,7 +8,7 @@ import Cart from "./Pages/Cart";
 import LoginSignup from "./Pages/LoginSignup";
 import Footer from "./Components/footer/footer";
 import men_banner from "./Components/Assets/banner_mens.png";
-import women_banner from "./Components/Assets/banner_women.png";
+// import women_banner from "./Components/Assets/banner_women.png";
 import kids_banner from "./Components/Assets/banner_kids.png";
 import ContactForm from "./Pages/ContactForm";
 import AboutUs from "./Pages/AboutUs"
@@ -24,7 +24,7 @@ function App() {
 
           <Route
             path="/mens"
-            element={<ShopCategory banner={men_banner} category="men" />}
+            element={<ShopCategory banner={men_banner} category="prod" />}
           />
 
           <Route
@@ -34,7 +34,7 @@ function App() {
 
           <Route
             path="/contactus"
-            element={<ContactForm banner={kids_banner} category="kid" />}
+            element={<ContactForm banner={kids_banner}  />}
           />
 
           <Route path="/product" element={<Product />}>

@@ -66,14 +66,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56799.7625346717!2d78.35339932607623!3d27.156757184336822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974469872bde991%3A0xdf84663a8c11acee!2sFirozabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1707949178182!5m2!1sen!2sin"
-        width="1330"
-        height="400"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d849.4127033508985!2d78.37704126957433!3d27.150047191866452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDA5JzAwLjIiTiA3OMKwMjInMzkuNyJF!5e1!3m2!1sen!2sin!4v1708402963601!5m2!1sen!2sin" className="maploc" height="600" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div className="ContactForm">
         <div className="container">
           <div className="row">
@@ -173,13 +166,13 @@ const ContactForm = () => {
                       )}
                     </div>
                   </div>
-
+                 
                   <button
                     className="submit-btn btn btn-dark"
                     disabled={disabled}
                     type="submit"
-                  >
-                    Submit
+                  ><a href="mailto:homecraft292@gmail.com">
+                    Submit</a>
                   </button>
                 </form>
               </div>

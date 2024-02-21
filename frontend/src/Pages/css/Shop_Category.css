@@ -1,10 +1,12 @@
 .shopcategory_products {
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 140px;
 }
 
 .shopcategory-indexSort {
@@ -14,4 +16,11 @@
 .shop_category {
   text-align: center;
 }
+
+.shop_category> img{
+  width: 100%;
+  height: auto;
+}
+
+
 

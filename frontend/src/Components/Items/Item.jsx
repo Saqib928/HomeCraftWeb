@@ -4,7 +4,7 @@ const Item = (props) => {
   return (
     <div className='item'>
 
-      <img src={props.image} alt="" />
+      <img height={300} width={250} src={props.image} alt="" />
       <p>{props.name}</p>
       <div className="item_prices">
         <div className="item_price_new">

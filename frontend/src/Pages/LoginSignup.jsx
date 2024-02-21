@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import "./css/loginSignup.css"
 const LoginSignup = (props) => {
  
-    const { loggedIn, email } = props;
+    // const { loggedIn, email } = props;
     const navigate = useNavigate();
     
-    const onButtonClick = () => {
-        // 'll update this function later
-    }
+    // const onButtonClick = () => {
+    //     // 'll update this function later
+    // }
 
     const handleSubmit = ()=>{
       navigate("/")
